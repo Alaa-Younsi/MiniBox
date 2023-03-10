@@ -13,11 +13,32 @@ body {
   background-size: 100%;
 }
 
+@media screen and (max-width: 600px) {
+  #Page {
+    background-image: url("phone-background.jpg");
+    background-size: 130%;
+    background-position: top;
+    border: 8px solid rgb(60, 60, 60);
+    margin: 2px;
+    height:690px;
+    width: 360px;
+  }
+}
+
 #Mini-page {
   background-color: black;
   border: 5px solid rgb(60, 60, 60);
   width: 99.5%;
   height: 70px;
+}
+
+@media screen and (max-width: 600px) {
+  #Mini-page {
+    background-color: black;
+    border: 5px solid rgb(60, 60, 60);
+    width: 352px;
+    height: 70px;
+  }
 }
 
 #Mini-page2 {
@@ -30,9 +51,53 @@ body {
   left: 29px;
 }
 
+@media screen and (max-width: 600px) {
+  #Mini-page2 {
+    background-color: black;
+    border: 5px solid rgb(60, 60, 60);
+    width: 352px;
+    height: 70px;
+    position: absolute;
+    top: 630px;
+    left: 18px;
+  }
+}
+
 ._text {
   font-size: 17px;
   font-weight: bold;
+}
+
+@media screen and (max-width: 600px) {
+  #Home {
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #Info {
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #Projects {
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #Contact {
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+  }
 }
 
 #Who {
@@ -54,15 +119,28 @@ body {
   padding-left: 25px;
   }
 
+  @media screen and (max-width: 600px) {
+    #Title {
+      color: white;
+      font-size: 37px;
+      text-shadow: 3px 3px 4px gray;
+      margin: 10px;
+      padding-left: 10px;
+      }
+  }
+
 #More {
   position: absolute;
   left: 110px;
   top: 320px;
 }
 
-#Lighter {
-  width: 190px;
-  height: 320px,
+@media screen and (max-width: 600px) {
+  #More {
+    position: absolute;
+    left: 200px;
+    top: 320px;
+  }
 }
 
 #Tv {
@@ -73,7 +151,18 @@ body {
   left: 60px;
   background-color: black;
   border: 8px solid rgb(60, 60, 60);
+}
 
+@media screen and (max-width: 600px) {
+  #Tv {
+    width: 300px;
+    height: 80px;
+    position: absolute;
+    top: 115px;
+    left: 40px;
+    background-color: black;
+    border: 8px solid rgb(60, 60, 60);
+  }
 }
 
 #Remote {
@@ -85,6 +174,17 @@ body {
   background-color: rgb(60, 60, 60);
 }
 
+@media screen and (max-width: 600px) {
+  #Remote {
+    width: 316px;
+    height: 20px;
+    position: absolute;
+    top: 210px;
+    left: 40px;
+    background-color: rgb(60, 60, 60);
+  }
+}
+
 #Info-text {
   color: white;
   font-size: 12px;
@@ -94,6 +194,19 @@ body {
   display: none;
   position: absolute;
   top: 1px
+}
+
+@media screen and (max-width: 600px) {
+  #Info-text {
+    color: white;
+    font-size: 10px;
+    font-style: italic;
+    font-weight: bold;
+    padding-left: 10px;
+    display: none;
+    position: absolute;
+    top: 1px
+  }
 }
 
 #Projects-text {
@@ -118,6 +231,17 @@ body {
   font-weight: bold;
   padding-left: 10px;
   display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .contact-text {
+    color: white;
+    font-size: 10px;
+    font-style: italic;
+    font-weight: bold;
+    padding-left: 10px;
+    display: none;
+  }
 }
 
 #A-facebook {
@@ -151,6 +275,18 @@ body {
   text-decoration: none;
   margin: 5px 2px;
   border-radius: 50%;
+}
+
+@media screen and (max-width: 600px) {
+  .fa {
+    padding: 4px;
+    font-size: 10px;
+    width: 12px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+  }
 }
 
 .fa-facebook {
@@ -233,6 +369,18 @@ button:active {
   height: 16px;
 }
 
+@media screen and (max-width: 600px) {
+  #Button-off {
+    margin-top: 0.1px;
+    margin-right: 10px;
+    float: right;
+    width: 25px;
+    height: 10px;
+    box-shadow: 0 4px #999;
+
+  }
+}
+
 .button-text {
   color: black;
   font-size: 10px;
@@ -242,6 +390,18 @@ button:active {
   bottom: 5px;
 }
 
+@media screen and (max-width: 600px) {
+  .button-text {
+    color: black;
+    font-size: 9px;
+    font-weight: bold;
+    font-style: italic;
+    position: relative;
+    bottom: 8px;
+    right: 2px;
+  }
+}
+
 #c {
   position: fixed;
   top: 1px;
@@ -249,6 +409,17 @@ button:active {
   height:740px;
   width: 1530px;
 }
+
+@media screen and (max-width: 600px) {
+  #c {
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    height:710px;
+    width: 380px;
+  }
+}
+
 canvas {
   display:none;
 }
@@ -260,6 +431,17 @@ canvas {
   width: 230px;
   height: 70px;
   display: none;
+}
+
+@media screen and (max-width: 600px) {
+  #Page2-button {
+    position: absolute;
+    top: 250px;
+    left: 100px;
+    width: 100px;
+    height: 40px;
+    display: none;
+  }
 }
 
 #On-text {
@@ -278,4 +460,18 @@ canvas {
   top: 120px;
   left: 300px;
   display: none;
+}
+
+@media screen and (max-width: 600px) {
+  #Page2-title {
+    color: white;
+    width: 200px;
+    height: 50px;
+    font-size: 40px;
+    font-weight: bold;
+    position: absolute;
+    top: 120px;
+    left: 80px;
+    display: none;
+  }
 }
