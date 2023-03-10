@@ -6,12 +6,14 @@ body {
   background-image: url("hat.png");
   border: 8px solid rgb(60, 60, 60);
   margin: 13px;
-  max-width: 100%;
-  max-height: 100%;
-  height:710px;
+  width: 100%;
+  height:690px;
   width: 1480px;
   background-size: 100%;
+  position: sticky;
+
 }
+
 
 @media screen and (max-width: 600px) {
   #Page {
@@ -47,8 +49,7 @@ body {
   width: 1470px;
   height: 70px;
   position: absolute;
-  bottom: 20px;
-  left: 29px;
+  bottom: 0.0000001px;
 }
 
 @media screen and (max-width: 600px) {
@@ -58,13 +59,27 @@ body {
     width: 352px;
     height: 70px;
     position: absolute;
-    top: 630px;
-    left: 18px;
+    top: 614px;
   }
 }
 
-._text {
-  font-size: 17px;
+#Home {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#Info {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#Projects {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#Contact {
+  font-size: 18px;
   font-weight: bold;
 }
 
@@ -102,8 +117,8 @@ body {
 
 #Who {
   color: white;
-  font-size: 12px;
-  font-style: oblique;
+  font-size: 13px;
+  font-style: normal;
   font-weight: bold;
   padding-left: 10px;
   position: absolute;
@@ -112,14 +127,14 @@ body {
 
 
 #Title {
+  font-style: oblique;
   color: white;
   font-size: 40px;
-  text-shadow: 3px 3px 4px gray;
   margin: 8px;
   padding-left: 25px;
   }
 
-  @media screen and (max-width: 600px) {
+@media screen and (max-width: 600px) {
     #Title {
       color: white;
       font-size: 37px;
@@ -148,7 +163,7 @@ body {
   height: 150px;
   position: absolute;
   top: 115px;
-  left: 60px;
+  left: 45px;
   background-color: black;
   border: 8px solid rgb(60, 60, 60);
 }
@@ -159,7 +174,7 @@ body {
     height: 80px;
     position: absolute;
     top: 115px;
-    left: 40px;
+    left: 22.5px;
     background-color: black;
     border: 8px solid rgb(60, 60, 60);
   }
@@ -169,8 +184,8 @@ body {
   width: 488px;
   height: 30px;
   position: absolute;
-  top: 242px;
-  left: 69px;
+  top: 242.5px;
+  left: 54px;
   background-color: rgb(60, 60, 60);
 }
 
@@ -180,7 +195,7 @@ body {
     height: 20px;
     position: absolute;
     top: 210px;
-    left: 40px;
+    left: 22.5px;
     background-color: rgb(60, 60, 60);
   }
 }
@@ -188,7 +203,7 @@ body {
 #Info-text {
   color: white;
   font-size: 12px;
-  font-style: oblique;
+  font-style: normal;
   font-weight: bold;
   padding-left: 10px;
   display: none;
@@ -200,7 +215,7 @@ body {
   #Info-text {
     color: white;
     font-size: 10px;
-    font-style: italic;
+    font-style: oblique;
     font-weight: bold;
     padding-left: 10px;
     display: none;
@@ -211,13 +226,19 @@ body {
 
 #Projects-text {
   color: white;
-  font-size: 12px;
-  font-style: oblique;
+  font-size: 13px;
+  font-style: normal;
   font-weight: bold;
   padding-left: 10px;
   display: none;
   position: absolute;
   top: 1px
+}
+
+@media screen and (max-width: 600px) {
+  #Projects-text {
+    font-size: 10px;
+  }
 }
 
 #A-zed {
@@ -226,8 +247,8 @@ body {
 
 .contact-text {
   color: white;
-  font-size: 12px;
-  font-style: oblique;
+  font-size: 13px;
+  font-style: normal;
   font-weight: bold;
   padding-left: 10px;
   display: none;
@@ -236,8 +257,7 @@ body {
 @media screen and (max-width: 600px) {
   .contact-text {
     color: white;
-    font-size: 10px;
-    font-style: italic;
+    font-size: 9px;
     font-weight: bold;
     padding-left: 10px;
     display: none;
@@ -416,7 +436,7 @@ button:active {
     top: 1px;
     left: 1px;
     height:710px;
-    width: 380px;
+    width: 390px;
   }
 }
 
@@ -426,8 +446,8 @@ canvas {
 
 #Page2-button {
   position: fixed;
-  top: 250px;
-  left: 370px;
+  top: 270px;
+  left: 630px;
   width: 230px;
   height: 70px;
   display: none;
@@ -437,7 +457,7 @@ canvas {
   #Page2-button {
     position: absolute;
     top: 250px;
-    left: 100px;
+    left: 150px;
     width: 100px;
     height: 40px;
     display: none;
@@ -454,11 +474,12 @@ canvas {
   color: white;
   width: 500px;
   height: 70px;
-  font-size: 50px;
+  font-size: 60px;
   font-weight: bold;
+  font-style: oblique;
   position: fixed;
   top: 120px;
-  left: 300px;
+  left: 630px;
   display: none;
 }
 
@@ -470,8 +491,8 @@ canvas {
     font-size: 40px;
     font-weight: bold;
     position: absolute;
-    top: 120px;
-    left: 80px;
+    top: 135px;
+    left: 130px;
     display: none;
   }
 }
